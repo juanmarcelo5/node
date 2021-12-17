@@ -44,9 +44,7 @@ const buscar = async ( req = request,res = response )=>{
         default:
         res.status(500).json({
             msg:'Se olvido de hacer esta busqueda'
-        })    
-
-            
+        })          
     
 
     }
