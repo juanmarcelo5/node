@@ -3,9 +3,11 @@ import dotenv from 'dotenv'
 import conectarDB from './config/db.js'
 import veterinarioRoutes from './routes/veterinarioRoutes.js'
 import pacienteRoutes from './routes/pacienteRoutes.js'
+import cors from 'cors'
 
 const app = express()
 //configuraciones y middlelweasrs
+app.use(cors())
 app.use(express.json())
 dotenv.config() // leer los archivos y busca el .env
 conectarDB()
