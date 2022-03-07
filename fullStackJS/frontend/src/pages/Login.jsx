@@ -32,8 +32,8 @@ export const Login = () => {
             />
           </div>
           <input
-            type="button"
-            value="crear cuenta"
+            type="submit "
+            value="Iniciar Sesion"
             className="bg-indigo-700 w-full py-3  px-10 rounded-xl text-white uppercase font-bold
             mt-4 hover:cursor-pointer hover:bg-indigo-800 md:w-auto "
           />

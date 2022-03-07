@@ -36,7 +36,7 @@ export const Register = () => {
 			const respuesta = await axios.post(url, dataForm)
 			return swal({
 				title: "Success",
-				text: 'Usuario Registrado!',
+				text: 'Usuario Registrado! revisa tu email',
 				icon: "success",
 			})
 			
