@@ -84,8 +84,9 @@ const autenticar = async (req, res) => {
 			msg: 'Usuario o contrase incorrecto',
 		})
 	}
+	usuario.token =generarJWT(usuario._id)
 	res.json({
-		token: generarJWT(usuario._id),
+		usuario
 	})
 }
 
